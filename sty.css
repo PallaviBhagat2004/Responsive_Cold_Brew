@@ -1,8 +1,7 @@
 /* Full-width info sections styling */
 .info-section {
-    width: 100vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    box-sizing: border-box;
     background: linear-gradient(90deg, #1a1a1a 60%, #2d2217 100%);
     color: var(--text-color);
     padding: 60px 0 60px 0;
@@ -79,7 +78,7 @@
     font-size: 1.5rem;
     color: var(--main-color);
     margin-bottom: 12px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Chewy', cursive;
 }
 .membership-card p {
     font-size: 1rem;
@@ -100,20 +99,11 @@
     margin-top: 10px;
     width: 100%;
 }
-.membership-card:hover, .membership-card.popular {
-    transform: translateY(-5px) scale(1.04);
+.membership-card:hover {
+    transform: translateY(-10px) scale(1.04);
     box-shadow: 0 8px 32px 0 rgba(174,137,87,0.25);
     border: 2px solid var(--main-color);
-}
-@media (max-width: 900px) {
-    .membership-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    .membership-card {
-        max-width: 90vw;
-    }
+    z-index: 2;
 }
 
 
@@ -145,7 +135,7 @@
     font-size: 1.3rem;
     color: var(--main-color);
     margin-bottom: 10px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Chewy', cursive;
 }
 .event-card p {
     font-size: 1rem;
@@ -158,13 +148,14 @@
     border: 2px solid var(--main-color);
     z-index: 2;
 }
+
 @media (max-width: 900px) {
-    .events-cards {
+    .membership-cards, .events-cards {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
-    .event-card {
+    .membership-card, .event-card {
         max-width: 90vw;
     }
 }
