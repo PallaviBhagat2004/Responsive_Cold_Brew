@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cold Brew Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sty.css">
+
+    <!-- box icon link -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+     <!-- remix icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    </head>
+
+    <!-- goolge font link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Lemon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+  rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<body>
+     <div class="container">
+        <header>
+        <a href="#logo">
+            <img src="logo (1).png" alt="">
+        </a>
+       <input type="checkbox"  id="check">
+        <ul class="navlist">
+            <li><a href="#">About</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+           <button class="nav-btn">Sign In</button>
+            <label for="check">
+                <div class="hamburger open" >
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            </label>
+     </header>
+
+     <!-- section  -->
+      <section class="hero">
+           <div class="hero-text">
+            <h5 data-aos="flip-down" data-aos-duration="1400" data-aos-delay="100">#Coffee for hot days </h5>
+            <h1 data-aos="fade-right" data-aos-duration="1400">- Cold Brew</h1>
+            <p data-aos="fade-left" data-aos-duration="1400" data-aos-delay="200">Boots your productivity and build your mood with a 
+                glass of coffee in the morning. Coffee has a stimulating
+                effect.</p>
+            <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="300" >
+            <a href="#" class="btn">Order Now</a>
+            <a href="#" class="price">$16.00 | <span>Regular Price</span></a>
+           </div>
+           </div>
+
+           <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400" >
+            <img src="hero.png" alt="err">
+           </div>
+      </section>
+
+      <div class="icons">
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="400"><i class="ri-facebook-fill"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="500"><i class="ri-youtube-fill"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600"><i class="ri-twitter-fill"></i></a>
+      </div>
+     </div>
+
+     <!-- Membership Section -->
+     <section id="membership" class="info-section">
+        <h2>Membership</h2>
+        <p>Join our exclusive coffee club and unlock a world of benefits! Choose the plan that fits you best and enjoy premium perks, discounts, and more.</p>
+        <div class="membership-cards">
+            <div class="membership-card">
+                <h3>Basic</h3>
+                <p>Perfect for casual coffee lovers. Get 10% off every order and access to monthly newsletters.</p>
+                <div class="price-tag">$5/mo</div>
+                <a href="#" class="btn">Choose Basic</a>
+            </div>
+            <div class="membership-card ">
+                <h3>Premium</h3>
+                <p>For true coffee enthusiasts. 20% off, early access to new brews, and exclusive invites to events.</p>
+                <div class="price-tag">$12/mo</div>
+                <a href="#" class="btn">Choose Premium</a>
+            </div>
+            <div class="membership-card">
+                <h3>Elite</h3>
+                <p>All Premium perks plus free monthly tastings, a welcome kit, and priority support.</p>
+                <div class="price-tag">$25/mo</div>
+                <a href="#" class="btn">Choose Elite</a>
+            </div>
+        </div>
+        <a href="#" class="btn">Become a Member</a>
+     </section>
+
+     <!-- Events Section -->
+     <section id="events" class="info-section">
+        <h2>Events</h2>
+        <p>Experience the world of coffee with our exclusive events! Whether you're a beginner or a connoisseur, there's something for everyone. Join us to learn, taste, and connect with fellow coffee lovers.</p>
+        <div class="events-cards">
+            <div class="event-card">
+                <h3>Coffee Tasting</h3>
+                <p>Every Saturday, 10am - 12pm<br>Sample our latest brews and learn about flavor profiles from our expert baristas.</p>
+            </div>
+            <div class="event-card">
+                <h3>Barista Workshop</h3>
+                <p>15th of each month, 2pm - 5pm<br>Hands-on training in latte art, espresso making, and more. All skill levels welcome!</p>
+            </div>
+            <div class="event-card">
+                <h3>Meet the Roaster</h3>
+                <p>Last Friday of the month, 6pm - 8pm<br>Meet our master roaster, discover the roasting process, and enjoy exclusive samples.</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Contact Section -->
+     <section id="contact" class="info-section">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+     </section>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="script.js"></script>
+  <script>
+    AOS.init({
+        offset:1,
+    });
+  </script>
+</body>
+</html>
